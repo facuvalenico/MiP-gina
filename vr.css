@@ -1,0 +1,746 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+    color: black;
+    padding: 0%;
+    margin: 0;
+    width: 100%; 
+    height: auto;
+    
+}
+
+#paginaindec {
+    background-image: url(imagenes/INDEC_frente_1.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+
+}
+
+
+header {
+    
+    animation-name: fotograma;
+    animation-duration: 3s;
+    animation-timing-function:(0.1,0.1,0.1);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: black solid 1px;
+ 
+}
+
+@keyframes fotograma{
+    
+    0% {background:linear-gradient(#666666,#DEDEDE,#9bd4fa)}
+
+        
+    100% {background: linear-gradient(#DEDEDE,#9bd4fa,#666666)}
+       
+}
+
+@media screen and (max-width:600px) {
+
+header h1{
+    align-self: center;
+    text-align: center; 
+    margin:auto;
+    font-size: larger;
+    
+}
+
+
+
+#logo {
+    position: initial;
+    width: 12%;
+    height: 12%;
+
+}
+
+}
+
+
+@media screen and (min-width:601px) {
+
+
+header h1{
+    align-self: center;
+    text-align: center; 
+    margin:auto;
+    
+}
+
+
+#logo {
+    position: initial;
+    width: 70px;
+    height: 70px;
+
+}
+
+}
+
+nav{
+    border: medium solid double grey;
+    align-self: flex-end;
+    text-align: right;
+    width: 100%;
+    padding: 2px;
+        
+}
+
+@media screen and (max-width:600px) {
+
+nav a{
+    background-image: linear-gradient(#666666,#9bd4fa,#DEDEDE);
+    color: black;
+    font-size: smaller;
+    font-weight: bold;
+    border: 1px solid green;
+    border-radius: 10%;
+    
+}
+}
+
+@media screen and (min-width:601px) {
+
+nav a{
+    background-image: linear-gradient(#666666,#9bd4fa,#DEDEDE);
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    border: 1px solid green;
+    border-radius: 10%;
+    
+}
+}
+
+@media screen and (max-width:600px) {
+section {
+    padding:0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 80%;
+    width: 100%;   
+    padding: 0;
+    margin-bottom: 20%;
+    margin-top: -15%;
+    
+}
+
+section article #intro{
+    background-color: white;
+    align-self: flex-end;
+    color: black;
+    font-weight: bold;
+    font-size: x-large ;
+    border-bottom: 5px double #665D1E;
+    margin-bottom: 3%;
+
+}
+
+}
+
+@media screen and (min-width:601px) and (max-width:1199px) {
+section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowwrap;
+    height: 100%;
+    width: 100%;   
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+section article #intro{
+    background-color: white;
+    align-self: flex-end;
+    color: black;
+    font-weight: bold;
+    font-size: x-large ;
+    border-bottom: 5px double #665D1E;
+    margin-bottom: 13%;
+
+}
+
+}
+
+@media screen and (min-width:1200px) {
+    section {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 100%;
+        width: 100%;   
+        
+    }
+
+    section article #intro{
+        background-color: white;
+        align-self: flex-end;
+        color: black;
+        font-weight: bold;
+        font-size: x-large ;
+        border-bottom: 5px double #665D1E;
+        margin-bottom: 13%;
+    
+    }
+    
+}
+
+
+
+@media screen and (max-width:600px) {
+    #concepto_canasta
+    {
+        margin-top: 5px;
+    }
+    }
+
+@media screen and (min-width:601px) and (max-width:1199px) {
+#concepto_canasta
+{
+    margin-top: 
+    10px;
+}
+}
+
+@media screen and (min-width:1200px) {
+    #concepto_canasta
+    {
+        margin-top: 20px;
+    }
+    }
+
+
+@media screen and (max-width:600px) {
+section article{
+    align-self: center;
+    width: 72%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 10%;
+}    
+}
+@media screen and (min-width:601px) and (max-width:1199px) {
+section article{
+    align-self: center;
+    width: 55%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 9%;
+    margin-right: 9%;
+    padding-left: 0%;
+    padding-right: 0%;
+}    
+}
+
+@media screen and (min-width:1200px) {
+    section article{
+    align-self: center;
+    width: 22%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 9%;
+    margin-right: 9%;
+    padding-left: 0%;
+    padding-right: 0%;
+    
+}
+}
+
+@media screen and (max-width:600px) {
+.carita h1, h5{
+    text-align: left;
+}
+}  
+
+
+.carita h1, h5{
+    text-align: left;
+    margin-left: 1%;
+    
+}    
+   
+
+section article h4{
+    
+    font-weight: bold;
+       
+}
+
+@media screen and (max-width:600px) {
+section aside{
+    width: 100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    align-self: center;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}                          
+}
+@media screen and (min-width:601px) and (max-width:1199px) {
+section aside{
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    align-self: center;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-right: 8%;
+    padding-left: 8%;
+}                          
+}
+
+@media screen and (min-width:1200px) {
+section aside{
+    width: 60%;
+    height: 100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    align-self: center;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-right: 1%;
+    padding-left: 9%;
+} 
+}
+
+@media screen and (max-width:600px) {
+    #introweb{
+        padding-top: 15%;
+        padding-bottom: 4%;
+        padding-inline: 1%;
+        text-align: left;
+}
+
+    #introweb h6{
+        font-size: 1rem;
+}
+
+    #introweb h1{
+        font-size: 1.5rem;
+}
+    #o2 img{
+        width: 100%;
+        height: 1%;
+
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:1199px) {
+    #introweb{
+        padding-bottom: 30px;
+        text-align: left;
+        font-size: xx-large;
+}
+
+    #o2 img{
+       width: 100%;
+       height: 1%;
+
+}
+
+}
+
+@media screen and (min-width:1200px) {
+    #introweb{
+        padding-bottom: 35px;
+        text-align: left;
+        font-size: xx-large;
+
+}
+    #o2 img{
+        width: 100%;
+        height: 1%;
+
+}
+}
+
+#p {font-size: small;
+
+}
+
+
+
+.casa{
+    background-image: url(imagenes/borba3.jpg);
+    border: 1px solid green;
+    
+}
+
+#dibucalcu{
+    height: 100%;
+    width: 100%;
+    border-bottom: 5px solid black;
+    margin-bottom: 4%;
+    margin-top: 4%;
+           
+}
+
+#dibu{
+    margin-right: 0%;
+    margin-left: 0%;
+    padding-top: 0%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 35%;
+}
+
+#panel{
+    width: 45%;
+    margin-right: 0%;
+    margin-left: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    
+}
+
+
+@media screen and (max-width:600px) {
+    #f{
+        padding-bottom: 60%;
+        color: black;
+    }
+    }
+    
+    @media screen and (min-width:601px) and (max-width:1199px) {
+        #f{
+            padding-bottom: 400px;
+            color: black;
+        
+    }
+    }
+    
+    @media screen and (min-width:1200px) {
+        #f{
+            padding-bottom: 400px;
+            color: black;
+        
+    }
+    }
+
+
+#marco{
+    background-image: linear-gradient(to top, #d7d2cc 0%, #486174 100%);
+    border: 5px double #665D1E;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    
+}
+
+
+#calculadora p{
+font-size: large;
+color:black;
+padding:2px;
+font-weight: bold;
+
+}
+
+
+#cbt{
+    font-size: large;
+    color:black;
+    border-width: 10px;
+    border-color: white;
+    padding:2px;
+    font-weight: bold;
+
+}
+
+#circuloverde {
+    margin-top: 20%;
+}
+
+@media screen and (max-width:600px) {
+
+.imagen {
+    width: 100%;
+    height: 70%;
+    border: green solid 1px;
+}  
+}
+
+@media screen and (min-width:601px) and (max-width:1199px) {
+.imagen {
+    width: 100%;
+    height: 400px;
+    border: green solid 1px;
+  }  
+  }
+
+@media screen and (min-width:1200px) {
+.imagen {
+    width: 100%;
+    height: 500px;
+    border: green solid 1px;
+  }  
+  }
+
+  
+
+@media screen and (max-width:600px) {
+.iframe {
+    width: 100%;
+    height: 300px;
+    order: green solid 2px;
+
+}   
+}
+
+@media screen and (min-width:601px) and (max-width:1199px) {
+.iframe {
+    width: 100%;
+    height: 400px;
+    
+
+}
+}
+
+@media screen and (min-width:1200px) { 
+.iframe {
+    width: 100%;
+    height: 400px;
+    
+}
+}
+
+#o1{
+    order:2;
+    border: 4px solid #dcdcdcbe;
+    border-radius: 5%;
+    padding: 10px;
+    background-image: linear-gradient(to right, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-right: 9%;
+    margin-left: 9%;
+    margin-top: 5%;
+}
+
+#o2{
+    order:1;
+}
+
+footer {
+   
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 1%;
+    
+   
+}
+
+footer #concepto_canasta{
+    
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+    color: black;
+    font-weight: bold;
+    font-size: smaller;
+    font-style: italic;
+    text-align: left;
+    
+}
+
+footer #footerF{
+    
+    background:linear-gradient(#9bd4fa,#666666,#DEDEDE);
+    border-width: 10px;
+    border-color: white;
+    text-align: center;
+    font-size: smaller;
+    font-weight: bolder;
+      
+    
+}
+
+
+footer #footerF p span a{
+    color: black;
+
+}
+
+i{
+    color: rgb(0, 68, 255);
+    
+    font-size: 200%;
+    
+}
+
+    
+.container{
+
+    margin-top: 10%;
+    margin-bottom: 20%;
+  
+}
+
+
+@media screen and (max-width:600px) {
+    #indecindec {
+    width: 100%;
+    height: 100%;
+    margin-top: 30%;
+    
+        
+    }
+    
+    .indecdic {
+     height: 70%;
+     width: 100%;
+     text-align: center;
+    }
+    
+    
+    
+    #yt {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 20%;
+    }
+    
+    #gm {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 20%;
+    }
+    
+    }
+
+
+
+@media screen and (min-width:601px) and (max-width:1199px) {
+    #indecindec {
+    width: 100%;
+    height: 100%;
+    padding-top: 6%;
+    padding-inline: 10%;
+    
+        
+    }
+    
+    .indecdic {
+     margin-top: 15%;
+     margin-inline: auto;
+     height: 70%;
+     width: 70%;
+     text-align: center;
+    }
+    
+    
+    
+    #yt {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 5%;
+    padding-inline: 10%;
+    }
+    
+    #gm {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 15%;
+    padding-inline: 10%;
+    }
+    
+    }
+
+
+@media screen and (min-width:1200px) {
+#indecindec {
+width: 100%;
+height: 100%;
+padding-top: 3%;
+padding-inline: 15%;
+
+    
+}
+
+.indecdic {
+ margin-top: 5%;
+ margin-inline: auto;
+ height: 70%;
+ width: 70%;
+ text-align: center;
+}
+
+
+
+#yt {
+width: 34.5%;
+background-color: transparent;
+margin-top: -4.5%;
+margin-bottom: 0%;
+margin-left: 15%;
+margin-right: 0.5%;
+
+}
+
+#gm {
+width: 34.5%;
+background-color: transparent;
+margin-top: 0.5%;
+margin-left: 0.5%;
+
+}
+
+}
